@@ -1,0 +1,11 @@
+import random
+caracters = "+-/*!&$#?=@abcdefghijklnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
+
+
+comprsenhas = int(input("Quantas senhas você quer gerar? "))
+
+senha = ""
+
+for i in range(comprsenhas):
+    senha += random.choice(caracters)
+print(senha)
